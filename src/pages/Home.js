@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
 
 const Home = () => {
-    return (
-        <div>
-            <Navigation/>
-            <h1>HOME</h1>
-        </div>
-    );
+  //   const { user, setUser } = useUserStore();
+
+  //   useEffect(() => {
+  //     console.log(user);
+  //   }, [user]);
+  return (
+    <div>
+      <Navigation />
+      <h1>HOME</h1>
+    </div>
+  );
 };
 
 export default Home;

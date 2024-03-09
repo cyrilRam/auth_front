@@ -1,11 +1,39 @@
 .navigation {
-
   .en-tete {
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
     background-color: #d0d0d0;
+    max-height: 60px;
 
+    .logger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 5%;
+
+      .name {
+        display: flex;
+        align-items: center;
+      }
+
+      .sub-nave {
+        font-weight: bold;
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+
+          li {
+            list-style: none;
+            color: rebeccapurple;
+            z-index: 1; /* Mettre la liste déroulante au premier plan */
+          }
+        }
+      }
+    }
 
     .compte {
       display: flex;
@@ -17,10 +45,7 @@
         font-weight: bold;
         font-size: 1.05rem;
         transition: color 0, 3s ease;
-
-
       }
-
     }
   }
 
@@ -43,7 +68,6 @@
         padding: 10px;
 
         li {
-
           transition: 0.2s;
           cursor: pointer;
           padding: 5px;
@@ -52,7 +76,7 @@
           cursor: pointer;
 
           &:hover {
-            color: #BFB4B4;
+            color: #bfb4b4;
             transition: color 0, 3s ease;
           }
         }
@@ -66,5 +90,4 @@
       }
     }
   }
-
 }
